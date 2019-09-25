@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: 300;
+  font-size: .95rem;
+}
+
+ul, li {
+  list-style-position: inside;
+}
+
+h3 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+button {
+  border: none;
+  background: #92c29c;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  transition: background .3s ease;
+}
+
+button:hover {
+  border: none;
+  background: rgb(5, 59, 17);
+  color: white;
+  padding: 10px;
+}
+
+button:disabled {
+  cursor: default;
+  background: #698ea5;
+}
+
+.centered-form {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  background: linear-gradient(325deg, rgb(153, 15, 15) 0%, rgba(49,84,129,1) 100%); /* w3c */
+}
+
+.centered-form_form {
+  background: rgba(250, 250, 250, 0.9);
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 0px 20px;
+  margin: 20px;
+  width: 350px;
+}
+
+.form-field {
+  margin: 20px 0;
+}
+
+.form-field > * {
+  width: 100%;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.form-field input, .form-field select {
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+}
+
+.chat {
+  display: flex;
+}
+
+.chat_sidebar {
+  overflow-y: scroll;
+  width: 260px;
+  height: 100vh;
+ background: linear-gradient(325deg, rgb(122, 122, 122) 0%, rgba(49,84,129,1) 100%); /* w3c */
+}
+
+.chat_sidebar h3 {
+  color: #d9dbdd;
+  margin: 10px 20px;
+  text-align: left;
+}
+
+.chat_sidebar ul {
+  list-style-type: none;
+}
+
+.chat_sidebar li {
+  background: #0cddba;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.chat_main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.chat_messages {
+  flex-grow: 1;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.chat_footer {
+  background: linear-gradient(325deg, rgb(3, 123, 235) 0%, rgb(0, 70, 161) 100%); /* w3c */
+  display: flex;
+  padding: 10px;
+  /*height: 60px;*/
+  flex-shrink: 0;
+}
+
+.chat_footer form {
+  flex-grow: 1;
+  display: flex;
+}
+
+.chat_footer form * {
+  margin-right: 10px;
+}
+
+.chat_footer input {
+  border: none;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.chat_messages {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.message {
+  padding: 10px;
+}
+
+.message_title {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.message_title h4 {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.message_title span {
+  color: #999;
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 1rem;
+  }
+
+  .chat__sidebar {
+    display: none;
+  }
+
+  .chat__footer {
+    flex-direction: column;
+  }
+
+  .chat__footer form {
+    margin-bottom: 10px;
+  }
+
+  .chat__footer button {
+    margin-right: 0px;
+  }
+}
+
+.signature {
+  text-align: center;
+  margin-bottom: 10px;
+}
