@@ -9,7 +9,7 @@
   "author": "Harsh Tuwar",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^4.3.1",
     "describe": "^1.2.0",
     "expect": "^23.6.0",
     "express": "^4.16.4",
